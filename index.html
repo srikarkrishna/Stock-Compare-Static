@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="stockFetch.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <form action="javascript:stockAdded(sName.value)">
+        <label for="stockSearch">Stock Symbol:</label><br>
+        <input type="text" id="sName" name="sName"><br>
+        <input type="submit" value="Add Stock">
+    </form>
+    <div id="errorLabel" style="color:red;"></div>
+    <ul id="companiesPicked"></ul>
+    <div id="stockChart" style="font-weight:bold;"></div>
+</body>
+
+</html>
